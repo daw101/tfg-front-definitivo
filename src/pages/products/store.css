@@ -1,0 +1,27 @@
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 3rem;
+  padding: 0 1rem;
+}
+
+.loader {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #2980b9;
+  padding: 2rem;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+.error-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #e74c3c;
+  margin-top: 2rem;
+}

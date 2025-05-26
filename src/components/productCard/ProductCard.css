@@ -1,0 +1,98 @@
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* que ocupe todo el espacio del grid */
+  min-height: 360px; /* ajusta a tu necesidad */
+  position: relative;
+  transition: transform 0.3s ease;
+  max-width: 300px;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+  color: #222;
+}
+
+.view-more-btn {
+  margin-top: 0.8rem;
+  background-color: #3498db;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+}
+
+.view-more-btn:hover {
+  background-color: #2980b9;
+}
+
+.product-details {
+  margin-top: 1rem;
+  text-align: left;
+  padding: 0 0.5rem;
+}
+
+.product-details p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.product-card button.added {
+  background-color: #2ecc71;
+}
+
+.product-card button {
+  margin-top: 1rem;
+  background-color: #222;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #444;
+}
+.product-details {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+  padding: 0;
+  opacity: 0;
+}
+
+.product-details.expanded {
+  max-height: 500px; /* Ajusta según la cantidad de contenido */
+  padding-top: 1rem;
+  opacity: 1;
+}

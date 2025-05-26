@@ -1,0 +1,69 @@
+.admin-panel {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.form-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-direction: column;
+}
+.form-container input {
+  flex-grow: 1;
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn.create {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn.update {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn.cancel {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn.edit {
+  background-color: #ffc107;
+  color: black;
+  margin-right: 0.5rem;
+}
+
+.btn.delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.category-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}

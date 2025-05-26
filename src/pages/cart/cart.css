@@ -1,0 +1,120 @@
+.cart-page {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .empty-cart {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .continue-shopping {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .cart-items {
+    border-top: 2px solid #ddd;
+    margin-top: 2rem;
+  }
+  
+  .cart-header {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 0.5fr;
+    padding: 1rem;
+    font-weight: bold;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-item {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 0.5fr;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .cart-item div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .remove-button {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+  }
+  
+  .cart-summary {
+    margin-top: 2rem;
+    text-align: right;
+  }
+  
+  .cart-summary p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .cart-actions {
+    margin-top: 1rem;
+  }
+  
+  .checkout-button {
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+  /* Estilo para el input de cantidad */
+/* Estilo para los botones de cantidad */
+.quantity-button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.quantity-button:hover {
+  background-color: #e55347;
+}
+
+/* Estilo para el input de cantidad */
+.quantity-input {
+  width: 50px;
+  text-align: center;
+  margin: 0 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.purchase-history-button {
+  background-color: #555;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1rem;
+  display: inline-block;
+}

@@ -1,0 +1,164 @@
+.admin-panel {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9fafb;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.panel-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-container {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.btn {
+  padding: 8px 14px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn.create {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn.update {
+  background-color: #2196f3;
+  color: white;
+}
+
+.btn.cancel {
+  background-color: #777;
+  color: white;
+}
+
+.btn.edit {
+  background-color: #ff9800;
+  color: white;
+}
+
+.btn.delete {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn:hover {
+  filter: brightness(1.1);
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-info img {
+  margin-top: 10px;
+  width: 100px;
+  border-radius: 4px;
+}
+
+.product-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.denied {
+  text-align: center;
+  margin-top: 100px;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+}
+.product-info h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.product-info p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.product-info img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+.product-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.product-details {
+  flex: 1;
+}
+
+.product-details h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.product-actions {
+  display: flex;
+  gap: 10px;
+}

@@ -1,0 +1,134 @@
+/* navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.navbar h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+/* Enlaces */
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  background-color: #444;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #ff6347; /* Rojo al pasar el ratón */
+  color: white;
+}
+
+/* Botón cerrar sesión */
+.logout-button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.logout-button:hover {
+  color: white;
+  background-color: #ff6347;
+}
+
+/* Badge contador carrito */
+.nav-links a[href="/cart"] {
+  position: relative;
+}
+
+.nav-links a[href="/cart"]::after {
+  content: attr(data-count);
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: #ff6347;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+  display: inline-block;
+  min-width: 20px;
+  text-align: center;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.nav-links a[href="/cart"][data-count]:not([data-count="0"])::after {
+  visibility: visible;
+}
+
+/* Añadir iconos con FontAwesome */
+.nav-links i {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+/* Navbar responsive */
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+  color: white;
+  padding: 0 10px;
+}
+
+.navbar.active .menu-icon {
+  display: block;
+}
+.navbar-logo {
+  height: 100px;    /* Ajusta el alto que quieres */
+  width: 100px;     /* Mantiene la proporción */
+  object-fit: contain;
+  cursor: pointer; /* Opcional, si quieres que se vea que es clickeable */
+  margin-right: 1rem; /* Espacio a la derecha */
+  vertical-align: middle;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Mostrar el ícono siempre en móvil */
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 20px;
+    border-radius: 0 0 8px 8px;
+    z-index: 10;
+  }
+
+  .navbar.active .nav-links {
+    display: flex;
+  }
+}
